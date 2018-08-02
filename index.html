@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+
+<head>
+    <link href='http://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+    <meta charset="UTF-8">
+    <title>Untitled Document</title>
+    <link href="assets/scripts/styles.css" rel="stylesheet" type="text/css">
+
+    <script src="assets/scripts/jquery-2.1.4.min.js"></script>
+    <script src="assets/scripts/change-content.js"></script>
+
+</head>
+<body>
+
+<div class="leftcontent" id="menu"><!--<img src="assets/images/apparent-logo.png" width="151" height="27" alt=""/>--><br/>
+
+    <!-- LEFT NAV COLUMN STARTS HERE !-->
+    <!-- EDIT TEXT TO REFLECT JOB DETAILS !-->
+    <div class="h1" id="client-name">Portfolio</div>
+    <div class="sub" id="job-number">Ankan Ghosh</div>
+    <p id="job-description">Optional job description can be included using the paragraph style tag here.</p>
+
+    <div class="desktop-only">
+       
+        <h5>My Introduction</h5>
+        <ul id="html5-banner">
+            <li><a href="#" onclick="#">Ankan Ghosh</a></li>
+        </ul>
+        <h2>Web Page</h2>
+        <ul id="html5-banner">
+            <li><a href="#" onclick="changeContent('MYPage/Boostrap/bootstrap_01/index.html','html')">Responsive</a></li>
+            <li><a href="#" onclick="changeContent('MYPage/HTML_CSS/Demo_2015/index.html','html')">Non Responsive</a></li>
+        </ul>
+        <h2>HTML5 Banners</h2>
+
+        <!-- EDIT LINKS USING THE FORMAT BELOW - IMAGES SHOULD USE 'img', SWF OR OTHER HTML PAGES SHOULD USE 'html'  !-->
+        <h5>Clicktag Banners</h5>
+        <ul id="html5-banner">
+            <li><a href="#" onclick="changeContent('Clicktags/AdWord/300x600_Adword/index.html','html')">Adword</a></li>
+            <li><a href="#" onclick="changeContent('Clicktags/DCM/300x250_DCM/index.html','html')">DCM</a></li>
+            <li><a href="#" onclick="changeContent('Clicktags/DCS/300x250_DCS/index.html','html')">DCS</a></li>
+            <li><a href="#" onclick="changeContent('Clicktags/Sizmic/300x600_Sizmic/index.html','html')">Sizmic</a></li>
+        </ul>
+        
+        <h5>Flash Banner</h5>
+        <ul id="html5-banner">
+            <li><a href="#" onclick="changeContent('Flash/Flash_Animate/300x250.html','html')">FlashBannner</a></li>
+		</ul>
+        
+        <h5>EDM</h5>
+        <ul id="html5-banner">
+            <li><a href="#" onclick="changeContent('EDM/EDM_01/index.html','html')">EDM_1</a></li>
+            <li><a href="#" onclick="changeContent('EDM/EDM_02/index.html','html')">EDM_2</a></li>
+            <li><a href="#" onclick="changeContent('EDM/EDM_03/index.html','html')">EDM_3</a></li>
+            <li><a href="#" onclick="changeContent('EDM/EDM_04/index.html','html')">EDM_4</a></li>
+		</ul>
+
+    	</div>
+
+    <div class="desktop-hide mobile-menu">
+    </div>
+
+
+
+</div>
+<div class="rightcontent" id="content">
+    <!-- RIGHT CONTENT COLUMN STARTS HERE !-->
+    <!-- DEFINE YOUR DEFAULT CONTENT HERE IF YOU WANT TO SEE SOMETHING ON FIRST LOAD !-->
+
+</div>
+<div id="include-config"></div>
+</body>
+</html>
