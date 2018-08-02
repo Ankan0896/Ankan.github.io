@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>300x250</title>
+<meta name="ad.size" content="width=300,height=250">
+<script src="https://s0.2mdn.net/ads/studio/Enabler.js" type="text/javascript"></script> 
+<script src="https://s0.2mdn.net/ads/studio/cached_libs/cssplugin_1.18.0_71489205621d46cbe88348eeb8fe493f_min.js"></script>
+<script src="https://s0.2mdn.net/ads/studio/cached_libs/easepack_1.18.0_ed5816e732515f56d96a67f6a2a15ccb_min.js"></script>
+<script src="https://s0.2mdn.net/ads/studio/cached_libs/tweenlite_1.18.0_56fa823cfbbef1c2f4d4346f0f0e6c3c_min.js"></script>
+
+<script>
+	function init(){
+		frame1Animation()
+		addevents()
+	}
+
+	var count=0;
+
+	function addevents(){
+		document.getElementById("bannerCTA").addEventListener("click", trackClick);	
+	}
+
+	function trackClick(){
+        Enabler.exit('300x250_exit'); 
+	}
+
+	function frame1Animation(){
+		TweenLite.set([copy1,copy2,copy2a,line1,line2,line3,line4,line5],{opacity:1});
+		TweenLite.set(red_square,{opacity:1, x: -26});
+
+		/*line draw animation*/
+		TweenLite.to(red_square,0.3,{x: 0, ease:Quad.easeOut, delay:0.2});
+
+		TweenLite.to(copy1_mask,0.5,{width:125, ease:SteppedEase.config(13), delay:0.5});
+		TweenLite.to(copy2_mask,0.5,{width:140, ease:SteppedEase.config(13), delay:1.0});
+		TweenLite.to(copy2a_mask,0.5,{width:140, ease:SteppedEase.config(13), delay:1.5});
+
+		TweenLite.to(line1_mask,0.15,{height:216, ease:Linear.easeNone, delay:1.5});
+		TweenLite.to(red_square,0.15,{y: -21, ease:Linear.easeNone, delay:1.5});
+
+		TweenLite.to(line2_mask,0.5,{width:156, ease:Linear.easeNone, delay:1.65});
+		TweenLite.to(red_square,0.5,{x: 135, ease:Linear.easeNone, delay:1.65});
+
+		TweenLite.to(line3_mask,0.5,{height:182, ease:Linear.easeNone, delay:2.15});
+		TweenLite.to(red_square,0.5,{y: 114, ease:Linear.easeNone, delay:2.15});
+
+		TweenLite.to(line4_mask,0.5,{width:286, ease:Linear.easeNone, delay:2.65});
+		TweenLite.to(red_square,0.5,{x: 0, ease:Linear.easeNone, delay:2.65});
+
+		TweenLite.to(line5_mask,0.4,{height:185, ease:Linear.easeNone, delay:3.15});
+		TweenLite.to(red_square,0.4,{y: 0, ease:Linear.easeNone, delay:3.15});
+		TweenLite.to(red_square,0.3,{opacity: 0, ease:Linear.easeNone, delay:3.55});
+
+    	TweenLite.delayedCall(4.0,frame2Animation)
+	}
+
+	function frame2Animation(){
+		TweenLite.set([copy3,copy3a],{opacity:1});
+		TweenLite.set([copy3_mask,copy3a_mask],{width:17});
+
+		TweenLite.to(grey_bg,0.5,{opacity: 1, ease:Quad.easeIn, delay:0});
+		TweenLite.to(copy3_mask,.75,{width:235, ease:SteppedEase.config(20), delay:0.5});
+		TweenLite.to(copy3a_mask,.75,{width:235, ease:SteppedEase.config(20), delay:1.2});
+		TweenLite.to(cta,0.5,{opacity: 1, ease:Quad.easeIn, delay:1.9});
+    	TweenLite.delayedCall(3,animreset)
+	}
+
+function animreset(){
+    count++;
+    if(count<2){
+        TweenLite.to([ cta, copy3,copy3a],0.5,{opacity:0});
+		TweenLite.to([grey_bg],0.5,{opacity:0, delay:.5});
+
+		TweenLite.set(red_square,{opacity:1, x: -26});
+		TweenLite.set([copy1_mask,copy2_mask,copy2a_mask],{width:28});
+		TweenLite.set(line1_mask,{height:180});
+		TweenLite.set(line2_mask,{width:12});
+		TweenLite.set(line3_mask,{height:37});
+		TweenLite.set(line4_mask,{width:144});
+		TweenLite.set(line5_mask,{height:71});
+
+        TweenLite.delayedCall(0.5,frame1Animation);
+    }
+}
+
+</script>
+
+<style>
+*{margin:0; padding:0;}
+.ad{position:relative; top:0; left:0; width:300px; height:250px; background-color:#FFF; overflow:hidden;}
+.frame1,.frame2{width:300px; height:250px; top:0px; left:0px; position:absolute;}
+.clickTag{width:300px;height:250px;display: block;position:absolute;cursor:pointer;left:0px;top:0px; z-index: 99;}
+
+#whhite_bg{position: absolute; top: 0; left: 0; width: 300px; height: 250px; background-color: #ffffff;}
+#img{position: absolute; top: 0; left: 0; opacity: 1; z-index: 2;}
+#man{position: absolute; top: 0; left: 0; opacity: 1; z-index: 10;}
+
+
+/*copies properties*/
+#copy1_mask{position: absolute; top:0; left: 0; width: 28px; height: 250px; overflow: hidden; }
+#copy1{position: absolute; top: 0; left: 0; width: 300px; height: 250px; opacity: 0; z-index: 11;}
+
+#copy2_mask{position: absolute; top:0; left: 0; width: 28px; height: 250px; overflow: hidden; }
+#copy2{position: absolute; top: 0; left: 0; width: 300px; height: 250px; opacity: 0; z-index: 11;}
+
+#copy2a_mask{position: absolute; top:0; left: 0; width: 28px; height: 250px; overflow: hidden; }
+#copy2a{position: absolute; top: 0; left: 0; width: 300px; height: 250px; opacity: 0; z-index: 11;}
+
+#copy3_mask{position: absolute; top:0; left: 0; width: 17px; height: 250px; overflow: hidden; }
+#copy3{position: absolute; top: 0; left: 0; width: 300px; height: 250px; opacity: 0; z-index: 14;}
+
+#copy3a_mask{position: absolute; top:0; left: 0; width: 17px; height: 250px; overflow: hidden; }
+#copy3a{position: absolute; top: 0; left: 0; width: 300px; height: 250px; opacity: 0; z-index: 14;}
+
+/*Line draw properties*/
+#red_square{position: absolute; top: 55px; left: 11px; width: 12px; height: 12px; background-color: #ed1c24; opacity: 0; z-index:5; }
+
+#line1_mask{position: absolute; bottom: 0; left: 0; width: 300px; height: 180px; overflow: hidden;}
+#line1{position: absolute; bottom: 0; left: 0; width: 300px; height: 250px; z-index: 3; opacity: 0;}
+
+#line2_mask{position: absolute; top: 0; left: 0; width: 12px; height: 250px; overflow: hidden;}
+#line2{position: absolute; top: 0; left: 0; width: 300px; height: 250px; z-index: 3; opacity: 0;}
+
+#line3_mask{position: absolute; top: 0; left: 0; width: 300px; height: 37px; overflow: hidden;}
+#line3{position: absolute; top: 0; left: 0; width: 300px; height: 250px; z-index: 3; opacity: 0;}
+
+#line4_mask{position: absolute; top: 0; right: 0; width: 144px; height: 250px; overflow: hidden;}
+#line4{position: absolute; top: 0; right: 0; width: 300px; height: 250px; z-index: 3; opacity: 0;}
+
+#line5_mask{position: absolute; bottom: 0; left: 0; width: 300px; height: 71px; overflow: hidden;}
+#line5{position: absolute; bottom: 0; left: 0; width: 300px; height: 250px; z-index: 3; opacity: 0;}
+
+/*grey bg and logo properties*/
+#grey_bg{position: absolute; top: 0; left: 0; width: 300px; height: 250px; background-color: #e9e4e2; opacity: 0; z-index:12; }
+
+
+/*CTA properties*/
+#cta{position:absolute; top:118px; left:21px; width:140px; height:29px; opacity:0; z-index:100; cursor:pointer; background:url(cta.png)0 0;}
+#cta:hover{position:absolute; background:url(cta.png)0 29px;}
+
+</style>
+
+</head>
+<body onLoad="init()">
+	<div class="ad">
+        <div class="clickTag" id="bannerCTA"></div>
+    	<div class="frame1">
+    		<div id="whhite_bg"></div>
+            <img id="img" src="img.jpg"/>
+            <img id="man" src="man.png"/>
+            
+
+            <div id="copy1_mask">
+            	<img id="copy1" src="copy1.svg"/>
+            </div>
+            <div id="copy2_mask">
+            	<img id="copy2" src="copy2.svg"/>
+            </div>
+            
+            <div id="copy2a_mask">
+            	<img id="copy2a" src="copy2a.svg"/>
+            </div>
+            
+
+            <div id="red_square"></div>
+            <div id="line1_mask">
+            	<img id="line1" src="line1.svg"/>
+            </div>
+            <div id="line2_mask">
+            	<img id="line2" src="line2.svg"/>
+            </div>
+            <div id="line3_mask">
+            	<img id="line3" src="line3.svg"/>
+            </div>
+            <div id="line4_mask">
+            	<img id="line4" src="line4.svg"/>
+            </div>
+            <div id="line5_mask">
+            	<img id="line5" src="line5.svg"/>
+            </div>
+        </div>
+
+    	<div class="frame2">
+            <div id="grey_bg"></div>
+           
+            <div id="copy3_mask">
+            	<img id="copy3" src="copy3.svg"/>
+            </div>
+            <div id="copy3a_mask">
+            	<img id="copy3a" src="copy3a.svg"/>
+            </div>
+           	<div id="cta" onMouseUp="trackClick()"></div>
+    	</div>
+	</div>
+</body>
+</html>
