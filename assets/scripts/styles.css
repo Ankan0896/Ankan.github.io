@@ -66,7 +66,7 @@ h5{
 	font-family: 'Rubik', sans-serif;
 	font-size:14px;
 	font-weight:normal;
-	color: #dc5e0f;
+	color: #215df3;
 }
 
 
@@ -93,6 +93,7 @@ h2 {
 	line-height: 1.7em;
 	margin-top:0px;
 	margin-bottom:1.3em;
+	color: #215df3;
 }
 	
 ul{
@@ -123,7 +124,7 @@ li a {
 }
 
 li a:hover { 
-	color:#299056;
+	color: #215df3;
 	border-bottom:dotted #215df3 1px;
 	font-size: 12px;
 }
