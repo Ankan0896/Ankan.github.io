@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+
+		<script src="https://s0.2mdn.net/ads/studio/cached_libs/cssplugin_1.18.5_6bbddbd910e8bfac4e19220fe52e1af6_min.js"></script>
+		<script src="https://s0.2mdn.net/ads/studio/cached_libs/easepack_1.18.5_4405b7326844d606cf693d06af83ddfd_min.js"></script>
+		<script src="https://s0.2mdn.net/ads/studio/cached_libs/tweenlite_1.18.5_3bb7bb8f4b38ac71b33dad50f1b17f49_min.js"></script>
+		<script src="https://s0.2mdn.net/ads/studio/cached_libs/timelinelite_1.19.0_13e3bd0e510d63fd5e5ef9bf9dac7017_min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"></script>
+		<script src="https://s0.2mdn.net/ads/studio/Enabler.js" type="text/javascript"></script> 
+		<script src="js/logic.js"></script>
+
+		<script>
+			//Webfont
+			WebFont.load({
+				custom: {
+					families: ['DIN'],
+					urls: ['fonts/font.css']
+				},
+				active: function() {
+					polite();
+				},
+				inactive: function() {
+					console.log("Fonts failed to load");
+					polite();
+				},
+				timeout: 4000
+			});
+
+			//Polite Initialize Enabler
+			function polite() {
+				console.log("requesting polite");
+				if (Enabler.isInitialized()) {
+					init();
+				} else {
+					Enabler.addEventListener(studio.events.StudioEvent.INIT, init);
+				}
+			}
+
+			//Run when Enabler is ready
+			function init(){
+				if(Enabler.isPageLoaded()){
+					setup();
+				}else{
+					Enabler.addEventListener(studio.events.StudioEvent.PAGE_LOADED, setup);
+				}
+			}
+		</script>
+	</head>
+<body>
+	<div id="background" class="width height"></div>
+
+	<div id="ad" class="width height">
+		
+		<div id="bgClickthrough" class="width height"></div>
+
+		<div id="disclaimerBtn">
+				<svg id="disclaimerArr" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 9.75 6.25"><polygon points="9.76 1.36 8.39 0 4.88 3.51 1.36 0 0 1.36 4.87 6.25 4.88 6.24 4.88 6.25 9.76 1.36" /></svg> Disclaimers
+		</div>
+		<div id="disclaimerBtnBG"></div>
+		
+		<div id="disclaimer" class="width height">
+			
+			<div id="terms1" class="terms white">
+				R.A.C.V. Finance Limited ABN 82 004 292 291 Australian Credit Licence No. 391488. RACV Finance is subject to RACV lending criteria. Conditions, fees and charges apply.
+				<br>&nbsp;<br>
+				RACV Motor Insurance is issued by Insurance Manufacturers of Australia Pty Ltd. Check out the PDS at racv.com.au
+			</div>
+			
+		</div>
+		
+		
+		<img id="backgroundImage-1" class="backgroundImage width" src="images/hero.jpg">
+
+		<div id="frame1" class="frame">
+			<div id="copy1" class="copy blue">
+				Buying a car?
+			</div>
+		</div>
+
+		<div id="frame2" class="frame">
+			<div id="copy2" class="copy blue">
+				Get everything you need<br>in one place.
+			</div>
+		</div>
+
+		<div id="frame3" class="frame">
+			<div id="copy3" class="copy blue">
+                Finance, insurance and<br>roadside assistance.
+			</div>
+		</div>
+
+		<div id="frame4" class="frame">
+			<div id="copy4" class="copy blue">
+			</div>
+		</div>
+
+		<div id="footer" class="frame">
+			<img id="logo" src="images/logo-RACV.svg" />
+			<div id="CTA">
+				<div id="CTABox">
+					<svg id="arrow" class="white" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 5 6"><polygon points="0 0 0 6 5 3 0 0" /></svg>
+				</div>
+				<div id="CTACopy" class="blue">
+					Find out more
+				</div>
+			</div>
+		
+		</div>
+	</div>
+</body>
+</html>

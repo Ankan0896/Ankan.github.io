@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no" />
+
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+
+		<script src="https://s0.2mdn.net/ads/studio/Enabler.js"></script>
+		<script src="https://s0.2mdn.net/ads/studio/cached_libs/cssplugin_1.20.4_5c12878a0fe9f741c5b72eb26497a737_min.js"></script>
+		<script src="https://s0.2mdn.net/ads/studio/cached_libs/easepack_1.20.4_7e44068dd65b1e3f82dec52f780163c8_min.js"></script>
+		<script src="https://s0.2mdn.net/ads/studio/cached_libs/tweenlite_1.20.4_42916b5332cef8519c5950778ee2e41d_min.js"></script>
+		<script src="https://s0.2mdn.net/ads/studio/cached_libs/timelinemax_1.20.4_9578d7e776129679d749ddee3541bbce_min.js"></script>
+
+		<script src="js/SplitText.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+		<script src="js/logic.js"></script>
+
+		<script type="text/javascript">
+			//Webfont
+			WebFont.load({
+				custom: {
+					families: ['Interstate'],
+					urls: ['fonts/Interstate.css']
+				},
+				active: function() {
+					polite();
+				},
+				inactive: function() {
+					console.log("Fonts failed to load");
+					polite();
+				},
+				timeout: 4000
+			});
+
+			//Polite Initialize Enabler
+			function polite() {
+				console.log("requesting polite");
+				if (Enabler.isInitialized()) {
+					init();
+				} else {
+					Enabler.addEventListener(studio.events.StudioEvent.INIT, init);
+				}
+			}
+
+			//Run when Enabler is ready
+			function init(){
+				if(Enabler.isPageLoaded()){
+					setup();
+				}else{
+					Enabler.addEventListener(studio.events.StudioEvent.PAGE_LOADED, setup);
+				}
+			}
+		</script>
+	</head>
+
+	<body>
+		<div id="ad">
+
+			<div id="whiteFG"></div>
+
+			<div id="copy01">IN THE FUTURE</div>
+			<div id="copy02">EVERYONE CAN<br>CONQUER SPACE</div>
+			<div id="copy03">WITH SEVEN SEATS</div>
+			<div id="copy03b">AND DIESEL<br>EFFICIENCY</div>
+			<div id="copy04">FUTURE READY</div>
+
+			<img id="cta" src="images/cta.svg" />
+			<img id="cx8Logo" src="images/cx8Logo.svg" />
+			<img id="mazdaLogo" src="images/mazdaLogo.svg" />
+
+			<img id="sky" src="images/sky.jpg" />
+			<img id="car" src="images/car.png" />
+
+			<div id="front">
+				<img id="shineF" src="images/wheel-trans2.png" />
+			</div>
+
+			<div id="rear">
+				<img id="shineR" src="images/wheel-trans2.png" />
+			</div>
+
+			<img id="road" src="images/road-v2.png" />
+			<img id="road02" src="images/road-v2.png" />
+			<img id="road03" src="images/road-v2.png" />
+			<img id="road04" src="images/road-v2.png" />
+			<img id="road05" src="images/road-v2.png" />
+			<img id="road06" src="images/road-v2.png" />
+			<img id="road07" src="images/road-v2.png" />
+			<img id="road08" src="images/road-v2.png" />
+			<img id="road09" src="images/road-v2.png" />
+
+			<img id="road10" src="images/road-v2.png" />
+			<img id="road11" src="images/road-v2.png" />
+			<img id="road12" src="images/road-v2.png" />
+			<img id="road13" src="images/road-v2.png" />
+			<img id="road14" src="images/road-v2.png" />
+			<img id="road15" src="images/road-v2.png" />
+			<img id="road16" src="images/road-v2.png" />
+			<img id="road17" src="images/road-v2.png" />
+			<img id="road18" src="images/road-v2.png" />
+			<img id="road19" src="images/road-v2.png" />
+
+
+			<div id="footerGrad"></div>
+
+			<div id="zoomContainer">
+				<div id="zoomZoomAni"></div>
+			</div>
+
+			<div id="background"></div>
+
+		</div>
+	</body>
+</html>
