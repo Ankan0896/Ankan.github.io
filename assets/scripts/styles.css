@@ -1,6 +1,7 @@
 body {
 	margin:0px;
 	padding:0px;
+	font-family: 'Rubik', sans-serif;
 	}
 
 .desktop-only{
@@ -32,24 +33,45 @@ body {
 	}
 	
 .h1 {
-	font-family:Oxygen, "Roboto Light", Arial, Helvetica, "Gill Sans", "Open Sans";
-	font-size:18px;
-	font-weight:400;
-	border-bottom:solid #b93039 5px;
+	font-family: 'Lobster', cursive;
+	font-size:26px;
+	font-weight:200;
+	color: #1d2570;
+	border-bottom:double #12c9b1 5px;
 	margin-top:20px;
+	padding-bottom: 5px;
 	}
 
 .sub{
-	font-family:Oxygen, "Roboto Light", Arial, Helvetica, "Gill Sans", "Open Sans";
-	font-size:14px;
+/*	font-family: 'Great Vibes', cursive;*/
+
+	font-family: 'Kaushan Script', cursive;
+
+	font-size:22px;
 	font-weight:700;
-	border-bottom:solid #b93039 1px;
+	color: #b93039;
+	border-bottom:ridge #3388d7 1px;
 	margin-top:20px;
 	margin-bottom:20px;
 	}
 
+#job-description{
+	font-family: 'Lobster', cursive;
+	font-size:18px;
+	font-weight:normal;
+	color: #299056;
+}
+h5{
+	
+	font-family: 'Rubik', sans-serif;
+	font-size:14px;
+	font-weight:normal;
+	color: #dc5e0f;
+}
+
+
 .links{
-	border-bottom:solid #b93039 1px;
+/*	border-bottom:dotted #b93039 1px;*/
 	margin-top:20px;
 	}
 	
@@ -84,6 +106,7 @@ ul{
 	overflow:hidden;
 	padding-bottom:20px;
 	list-style-type: none;
+	
 }
 
 li { 
@@ -91,14 +114,18 @@ li {
     background-repeat: no-repeat;
     background-position: 0px 7px; 
 	padding-left: 14px;
+	font-family: 'Rubik', sans-serif;
 }
 
 li a { 
 	color:#333333;
+	text-decoration: none;
 }
 
 li a:hover { 
-	color:#b93039;
+	color:#299056;
+	border-bottom:dotted #215df3 1px;
+	font-size: 12px;
 }
 
 .mobile-menu select{
