@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.banner300x600 {
+    width: 300px;
+    height: 600px;
+    position: relative;
+    padding: 0;
+    margin: 0;
+	border: 1px solid rgba(0,0,0,1.00);
+	box-sizing:	border-box;
+    overflow: hidden;
+	color: rgba(255,255,255,1.00);
+    cursor: pointer;
+}
+/* Invisible button for background clickthrough. */
+#background_exit_dc {
+  position: absolute;
+  width: 300px;
+  height: 600px;
+  top: 0px;
+  left: 0px;
+  cursor: pointer;
+  opacity: 0;
+}
+
+#frame1{
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 600px;
+	width: 300px;
+	z-index: 2;
+}
+#bg{
+	position: absolute;
+	top: -1px;
+	left: -1px;
+	width: 300px;
+	height: 600px;
+	opacity: 0;
+}
+#copy_1a,#copy_1b,#copy_1c{
+	position:absolute;
+	top:-1px; 
+	left:-1px;
+	width: 300px;
+	height: 600px;
+	opacity:0;
+	z-index: 5;
+}
+#copy_2{
+	position:absolute;
+	top:-1px; 
+	left:-1px;
+	width: 300px;
+	height: 600px;
+	opacity:0;
+	z-index: 3;
+}
+#copy_3{
+	position:absolute;
+	top:-1px; 
+	left:-1px;
+	width: 300px;
+	height: 600px;
+	opacity:0;
+	z-index: 3;
+}
+#left_curt,#right_curt{
+	position:absolute;
+	top:-1px; 
+	left:-1px;
+	width: 300px;
+	height: 600px;
+	opacity:0;
+	z-index: 4;
+}
+#logo{
+	position:absolute;
+	top: 331px; 
+	left: 94px;
+	width: 101px;
+	height: 103px;
+	opacity:0;
+	z-index: 6;
+}
+#legal{
+	position:absolute;
+	top:-1px; 
+	left:-1px;
+	width: 300px;
+	height: 600px;
+	opacity:0;
+	z-index: 5;
+}

@@ -1,0 +1,201 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+.ad {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 300px;
+	height: 600px;
+	background-color: #ffffff;
+	border: 2px solid #314351;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+#frame1,#frame2,#frame3{
+	width: 300px;
+	height: 600px;
+	top: -1px;
+	left: -1px;
+	position: absolute;
+}
+.clickTag {
+	width: 300px;
+	height: 600px;
+	display: block;
+	position: absolute;
+	cursor: pointer;
+	left: 0px;
+	top: 0px;
+	z-index: 99;
+	background-color: rgba(255,255,255,0);
+}
+
+#copy1,#copy2,#copy3{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 300px;
+	height: 600px;
+	opacity: 0;
+	z-index: 5;
+}
+#bg1{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 300px;
+	height: 600px;
+	opacity: 0;
+	z-index: 2;
+}
+#bg2{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 300px;
+	height: 600px;
+	opacity: 0;
+	z-index: 1;
+}
+#cloud1,#cloud2,#cloud3{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 300px;
+	height: 600px;
+	opacity: 0;
+	z-index: 6;
+}
+#cloud4,#cloud5,#cloud6{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 300px;
+	height: 600px;
+	opacity: 0;
+	z-index: 6;
+}
+#cloud7,#cloud8,#cloud9{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 300px;
+	height: 600px;
+	opacity: 0;
+	z-index: 8;
+}
+#cloudB1,#cloudB2,#cloudB3{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 300px;
+	height: 600px;
+	opacity: 0;
+	z-index: 9;
+}
+#cloudB4,#cloudB5,#cloudB6{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 300px;
+	height: 600px;
+	opacity: 0;
+	z-index: 9;
+}
+#drone_anim{
+    position: absolute;
+	width: 300px;
+	height: 600px;
+	top: -37px;
+	left: -19px;
+	opacity: 0;
+	z-index: 15;
+	
+}
+#drone{
+	position: absolute;
+	width: 300px;
+	height: 600px;
+	top: -1px;
+	left: -1px;
+	opacity: 0;
+	z-index: 15;
+}
+#left_wing{
+	position: absolute;
+	width: 61px;
+	height: 12px;
+	top: 296px;
+	left: 62px;
+	opacity: 0;
+	z-index: 15;
+}
+#right_wing{
+	position: absolute;
+	width: 61px;
+	height: 12px;
+	top: 296px;
+	left: 223px;
+	opacity: 0;
+	z-index: 15;
+}
+#sun{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 300px;
+	height: 600px;
+	opacity: 0;
+	z-index: 3;
+}
+#logo{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 300px;
+	height: 600px;
+	opacity: 0;
+	z-index: 8;
+}
+#logo2{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 300px;
+	height: 600px;
+	opacity: 0;
+	z-index: 8;
+}
+#logo3{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 300px;
+	height: 600px;
+	opacity: 0;
+	z-index: 8;
+}
+#cta{
+	position: absolute;
+	top:-1px;
+	left:-1px;
+	width:300px;
+	height:600px;
+	opacity:1;
+	z-index:8;
+
+}
+
+#ctaimg{
+	position: absolute;
+	top:0px;
+	left:0px;
+	width:300px;
+	height:600px;
+	opacity:0;
+	z-index:8;
+
+}
+

@@ -1,0 +1,156 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+.ad {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 728px;
+	height: 90px;
+	background-color: #ffffff;
+	border: 1px solid #000000;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+#frame1,#frame2,#frame3,#frame4{
+	width: 728px;
+	height: 90px;
+	top: 0px;
+	left: 0px;
+	position: absolute;
+}
+.clickTag {
+	width: 728px;
+	height: 90px;
+	display: block;
+	position: absolute;
+	cursor: pointer;
+	left: 0px;
+	top: 0px;
+	z-index: 99;
+	background-color: rgba(255,255,255,0);
+}
+#bg{
+	width: 728px;
+	height: 90px;
+	top: -1px;
+	left: -1px;
+	position: absolute;
+	opacity:0;
+	z-index:5;
+}
+
+
+#bg2{
+	width: 728px;
+	height: 90px;
+	top: -1px;
+	left: -1px;
+	position: absolute;
+	opacity:0;
+	z-index:4;
+}
+
+#red_box{width: 481px;
+	height: 90px;
+	top:0px;
+	left: -229px;
+	position: absolute;
+	opacity:0;
+	background:#9e2d32;
+	z-index:5;
+	}
+
+#logo_copy,#f1_copy_1{
+	width: 728px;
+	height: 90px;
+	top: -1px;
+	left: -1px;
+	position: absolute;
+	opacity:0;
+	z-index:5;
+}
+#logo{
+	top: 271px;
+	right: 120px;
+	position: absolute;
+	opacity:0;
+	z-index:5;
+}
+#bds_box{
+	width: 87px;
+	height: 87px;
+	top: 14px;
+	left: 305px;
+	position: absolute;
+	opacity:0;
+	z-index:4;
+	}
+#b_pharma_box{
+	width: 122px;
+	height: 123px;
+	top: 14px;
+	left: 305px;
+	position: absolute;
+	opacity:0;
+	z-index:4;
+	}
+#bsn_box{
+	width: 123px;
+	height: 122px;
+	top: 14px;
+	left: 305px;
+	position: absolute;
+	opacity:0;
+	z-index:4;
+	}
+#mbbs_box{
+	width: 122px;
+	height: 122px;
+	top: 14px;
+	left: 305px;
+	position: absolute;
+	opacity:0;
+	z-index:4;
+	}
+#f3_box_left{
+	width: 728px;
+	height: 90px;
+	top: -1px;
+	left: -1px;
+	position: absolute;
+	opacity:0;
+	z-index:4;
+		}
+		
+	#f3_box_right,#f3_copy_1{
+	width: 728px;
+	height: 90px;
+	top: -1px;
+	left: -1px;
+	position: absolute;
+	opacity:0;
+	z-index:5;
+		}
+	#f4_copy_1,#f4_copy_2{
+	width: 728px;
+	height: 90px;
+	top: -1px;
+	left: -1px;
+	position: absolute;
+	opacity:0;
+	z-index:5;
+		}
+			
+#cta{
+	position: absolute;
+	top: -1px;
+	left: -1px;
+	width: 728px;
+	height: 90px;	
+	opacity:0;
+	z-index:6;
+	
+}
+
