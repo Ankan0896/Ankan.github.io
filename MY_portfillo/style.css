@@ -1,0 +1,706 @@
+@charset "UTF-8";
+*{
+	margin: 0;
+	padding: 0;
+	top: 0;
+	left: 0;
+	border: 0;
+	align-content: center;
+}
+
+
+
+body{
+	background:linear-gradient(
+      rgba(10, 189, 160, .75), 
+      rgba(10, 189, 160, .75)
+/*
+		rgba(115, 224, 179, 0.72), 
+      rgba(115, 224, 179, 0.72)
+*/
+    ),
+url(images/number1.gif);
+	
+	
+}
+a{
+	text-decoration: none !important;
+	color: #17e7a4 ;
+	font-size: 2.2rem ;
+	
+}
+
+a:hover{
+
+	color: #fff ;
+
+}
+
+#main{
+	max-width: 760px;
+	margin: 5em auto 0 auto;
+	padding:0;
+	background-color: rgba(2,1,14,0.85);
+	font-family: 'Source Sans Pro', sans-serif;
+	content: " ";
+	min-height: 200px;
+	clear: both;
+	margin-bottom: 5em;
+	border-radius: 5px;
+
+		
+}
+nav{
+	width: 100%;
+	clear: both;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	clear: both;
+	
+}
+
+.nav_warp{
+	max-width: 70% !important;
+	margin: 0 auto !important;
+	text-align: center;
+	clear: both;
+	
+
+}
+#nav_pro,#nav_edu,#nav_exp,#nav_skil{
+ 
+	
+/*	width: 25%;*/
+	z-index: 100;
+	border-bottom-right-radius:  15px;
+     border-bottom-left-radius:  15px;
+	margin: 0;
+	padding: 0;
+
+
+
+	
+	
+}
+
+#nav_pro  a ,#nav_edu  a,#nav_exp  a
+  {
+
+ 	display: block;
+    width: 100%; height: 100%;
+    background-size: 100% 200%;
+    color: rgba(255,255,255,0.75);
+     border-bottom-right-radius:  15px;
+     border-bottom-left-radius:  15px;
+
+    background-image: linear-gradient(to bottom, rgba( 0, 0, 0,0) 50%, #17e7a7 50%);
+    -webkit-transition: background-position 0.3s;
+    -moz-transition: background-position 0.3s;
+    transition: background-position 0.3s;
+    padding-top: 1.5em;
+    z-index: -1;
+    padding-bottom: .5em;
+	border-left: 1px solid rgba(2,1,14,0.3);
+	border-right: 1px solid rgba(2,1,14,0.3);
+	box-sizing: border-box;
+
+}
+
+
+#nav_skil a
+  {
+
+ 	display: block;
+    width: 100%; height: 100%;
+    background-size: 100% 200%;
+    color: rgba(255,255,255,0.75);
+     border-bottom-right-radius:  15px;
+     border-bottom-left-radius:  15px;
+
+    background-image: linear-gradient(to bottom, rgba( 0, 0, 0,0) 50%, #17e7a7 50%);
+    -webkit-transition: background-position 0.3s;
+    -moz-transition: background-position 0.3s;
+    transition: background-position 0.3s;
+    padding-top: 1.65em;
+    z-index: -1;
+    padding-bottom: .5em;
+	  
+	border-left: 1px solid rgba(2,1,14,0.3);
+	border-right: 1px solid rgba(2,1,14,0.3);
+	box-sizing: border-box;
+
+}
+
+#nav_pro a:hover ,#nav_edu a:hover,#nav_exp a:hover ,#nav_skil a:hover {
+
+    background-position: 0 -99%;
+	box-sizing: border-box;
+	
+  
+  color: #fff  !important;
+
+}
+
+
+#nav_pro a:active,#nav_edu a:active,#nav_exp a:active,#nav_skil a:active{
+	background-color:  #17e7a7;
+}
+
+
+
+
+
+
+
+ .fa-user-tie,.fa-graduation-cap,.fa-black-tie, .fa-plane-departure{
+	font-size: 2.5rem;
+	
+	clear: both;
+}
+
+
+
+
+#pro_menu,#edu_menu,#exp_menu{
+	font-size: 2.5rem;
+	
+	clear: both;
+}
+
+section{
+	width: 100%;
+	clear: both;
+}
+
+.btn {
+	position: fixed;
+    /*background-color: DodgerBlue;*/
+    border: none;
+    color: white;
+    /*padding: 5px 20px;*/
+    cursor: pointer;
+    font-size: 20px;
+  /*  bottom: 10px;
+    right: 10px;*/
+
+    margin-top: -20px;
+
+    }
+
+   
+
+#pro_section{
+	max-width: 70%;
+	padding-top: 2em;
+	margin: 0 auto;
+	text-align: center;
+	opacity: 0;
+	display: none;
+
+}
+
+#pro_section a {
+	color: #17e7a4 ;
+	font-size: 1.8rem;
+}
+#pro_section a:hover {
+	color: #fff !important;
+}
+.pro_pic{
+	width: 140px;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+}
+
+#pro_section h2{
+	font-size: 3em;
+	color: #fff;
+	margin: 0.5em 0 0.5em 0;
+}
+#pro_section p{
+	font-size: 1.8rem;
+    line-height: 1.3;
+	color:rgba(255,255,255,0.75);
+	text-align: justify;
+}
+#num_10{
+	width: 15%;
+	padding:0;
+	margin: 0;
+	font-size: 8rem;
+	color:#17e7a7;
+	margin-left: 1em;
+	margin-right: 1em;      
+	}
+.side_left{
+	/*width: 90%;*/
+
+	padding-top: 0.5em;
+	
+	font-size: 1.8rem;
+	color:rgba(255,255,255,0.75);
+	text-align: justify;
+
+
+}
+#pro_section .side_left h2{
+	font-size: 2.3rem;
+	color: #fff;
+	text-align: left;
+}
+.side_left p{
+	
+	margin-top: -0.5em;
+	font-size: 1.5rem  !important;
+    line-height: 1.3;
+	color:rgba(255,255,255,0.75);
+	text-align: justify;
+
+
+}
+.embd{
+	clear: both;
+	min-width: 100%;
+	height: 1px;
+}
+
+.social_icon{
+	width: 100%;
+	margin-top: 1em;
+	clear: both;
+	text-align: center;
+
+}
+
+
+.mail_box ,.messenger_icon ,.instagram_icon ,.linkedin_icon {
+	font-size: 2.5rem;
+	color:  #17e7a7;
+	padding-left: 1.5em;
+}
+
+
+
+/*##################################### education containt start here ###########################*/
+
+#edu_section{
+	max-width: 70%;
+	padding: 2em 5em 0 5em;
+	margin: 0 auto;
+	text-align: left;
+	opacity: 0;
+	display: none;
+
+}
+
+#edu_section p{
+	font-size: 1.8rem;
+    line-height: 1.3;
+	color:rgba(255,255,255,0.75);
+	padding-top: 0.5em;
+    
+    text-align: left;
+}
+.degree{
+	width: 100%;
+	padding-top:1em; 
+}
+
+ .degree_icon{
+	
+	padding-top:0.9em;
+	margin: 0 auto;
+	/*float: left;*/
+	font-size: 4rem;
+	color:#17e7a7;
+	text-align:left;
+	clear: both;
+}
+
+#cap_icon{
+	display: block;
+	text-align: center;
+}
+
+#edu_section .side_left h2{
+	font-size: 2.5rem;
+	color: #fff;
+	text-align: left;
+}
+
+
+
+#exp_section{
+	max-width: 70%;
+	padding: 2em 5em 0 5em;
+	margin: 0 auto;
+	text-align: left;
+	opacity: 0;
+	display: none;
+
+}
+#exp_section p{
+	font-size: 1.8rem !important;
+    line-height: 1.3;
+	
+	color:rgba(255,255,255,0.75);
+	padding-top: 0.5em;
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+#exp_section .side_left h2{
+	font-size: 2.5rem;
+	color: #fff;
+	text-align: left;
+}
+
+#skill_section
+{
+	max-width: 70%;
+	padding: 2em 0em 0 2em;
+	margin: 0 auto;
+	text-align: left;
+	opacity: 0;
+	display: none;
+	
+}
+
+
+#skill_section p{
+	font-size: 1.8rem !important;
+    line-height: 1.3;
+	color:rgba(255,255,255,0.75);
+	padding-top: 0.5em;
+    font-size: 1.2rem;
+    text-align: left;
+}
+#skill { 
+	list-style: none;
+	font: 1rem "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	max-width: 500px;
+	margin: 50px 50px 50px 0;
+	position: relative;
+	line-height: 2em;
+	padding: 30px 0px ;
+}
+
+#skill li { 
+	margin-bottom:50px; 
+	background:#e9e5e2;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#e1ddd9), to(#e9e5e2));
+	background-image: -webkit-linear-gradient(top, #e1ddd9, #e9e5e2);
+	background-image: -moz-linear-gradient(top, #e1ddd9, #e9e5e2);
+	background-image: -ms-linear-gradient(top, #e1ddd9, #e9e5e2);
+	background-image: -o-linear-gradient(top, #e1ddd9, #e9e5e2);
+	background-image: linear-gradient(top, #e1ddd9, #e9e5e2);  
+	height:20px; 
+	border-radius:10px; 
+	-moz-box-shadow: 0 1px 0px #bebbb9 inset, 0 1px 0 #fcfcfc;	 
+	-webkit-box-shadow: 0 1px 0px #bebbb9 inset, 0 1px 0 #fcfcfc;	 
+	box-shadow: 0 1px 0px #bebbb9 inset, 0 1px 0 #fcfcfc;	  
+}
+
+#skill li h3 { 
+	position:relative; 
+	top:-30px;
+	color:rgba(255,255,255,0.75);
+}
+
+.bar { 
+	top: 50px;
+	height:18px; 
+	margin:1px 2px;  
+	position:absolute;
+	border-radius:10px;
+	-moz-box-shadow: 0 1px 0px #fcfcfc inset, 0 1px 0 #bebbb9;
+	-webkit-box-shadow: 0 1px 0px #fcfcfc inset, 0 1px 0 #bebbb9;	 
+	box-shadow: 0 1px 0px #fcfcfc inset, 0 1px 0 #bebbb9;		
+}
+
+.graphic-design {
+	width:45%; 
+
+	-moz-animation:graphic-design 2s ease-out;
+	-webkit-animation:graphic-design 2s ease-out;
+	background-color: #f674a4;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#f674a4), to(#e06995));
+	background-image: -webkit-linear-gradient(top, #f674a4, #e06995);
+	background-image: -moz-linear-gradient(top, #f674a4, #e06995);
+	background-image: -ms-linear-gradient(top, #f674a4, #e06995);
+	background-image: -o-linear-gradient(top, #f674a4, #e06995);
+	background-image: linear-gradient(top, #f674a4, #e06995);
+}
+
+
+.html-css {
+	margin-top: 71px;
+	width:90%;
+	-moz-animation:html-css 2s ease-out;
+	-webkit-animation:html-css 2s ease-out;
+	background-color: #f0bb4b;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#f0bb4b), to(#d9aa44));
+	background-image: -webkit-linear-gradient(top, #f0bb4b, #d9aa44);
+	background-image: -moz-linear-gradient(top, #f0bb4b, #d9aa44);
+	background-image: -ms-linear-gradient(top, #f0bb4b, #d9aa44);
+	background-image: -o-linear-gradient(top, #f0bb4b, #d9aa44);
+	background-image: linear-gradient(top, #f0bb4b, #d9aa44);
+}
+
+.jquery {
+	margin-top: 141px;
+	width:75%;
+	-moz-animation:jquery 2s ease-out;
+	-webkit-animation:jquery 2s ease-out;
+	background-color: #a1ce5b;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#a1ce5b), to(#91ba52));
+	background-image: -webkit-linear-gradient(top, #a1ce5b, #91ba52);
+	background-image: -moz-linear-gradient(top, #a1ce5b, #91ba52);
+	background-image: -ms-linear-gradient(top, #a1ce5b, #91ba52);
+	background-image: -o-linear-gradient(top, #a1ce5b, #91ba52);
+	background-image: linear-gradient(top, #a1ce5b, #91ba52);
+}
+
+.wordpress {
+	margin-top: 211px;
+	width:30%;
+	-moz-animation:wordpress 2s ease-out;
+	-webkit-animation:wordpress 2s ease-out;
+	background-color: #66b3cc;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#66b3cc), to(#5da3ba));
+	background-image: -webkit-linear-gradient(top, #66b3cc, #5da3ba);
+	background-image: -moz-linear-gradient(top, #66b3cc, #5da3ba);
+	background-image: -ms-linear-gradient(top, #66b3cc, #5da3ba);
+	background-image: -o-linear-gradient(top, #66b3cc, #5da3ba);
+	background-image: linear-gradient(top, #66b3cc, #5da3ba)	
+}
+
+@-moz-keyframes graphic-design {0%  { width:0px;} 100%{ width:45%;}  }
+@-moz-keyframes html-css        { 0%  { width:0px;} 100%{ width:90%;}  }
+@-moz-keyframes jquery      { 0%  { width:0px;} 100%{ width:75%;}  }
+@-moz-keyframes wordpress   { 0%  { width:0px;} 100%{ width:30%;}  }
+
+@-webkit-keyframes graphic-design       { 0%  { width:0px;} 100%{ width:45%;}  }
+@-webkit-keyframes html-css        { 0%  { width:0px;} 100%{ width:90%;}  }
+@-webkit-keyframes jquery      { 0%  { width:0px;} 100%{ width:75%;}  }
+@-webkit-keyframes wordpress   { 0%  { width:0px;} 100%{ width:30%;}  }
+
+
+footer{
+	width: 100%;
+	background-color: #000;
+	margin-top: 1em;
+	font-size: 1rem;
+	border-bottom-right-radius:  5px;
+     border-bottom-left-radius:  5px;
+	
+
+}
+footer p{
+	color: #fff;
+	text-align: center;
+	padding: 1em 0 1em 0;
+	font-size: 1.5rem;
+}
+footer a {
+	color: #17e7a4!important;
+	font-size: 1.5rem !important;
+}
+footer a:hover{
+	color: #fff !important;
+	
+}
+
+
+
+
+@media screen and (max-width: 768px){
+	#main{
+		width: 100%;
+		height: 100%;
+		padding: 0;
+		margin: 0;
+		/*background-color: #000;*/
+	}
+	
+	
+
+#nav_pro, #nav_edu, #nav_exp, #nav_skil {
+	
+	
+	
+	}
+	#nav_pro a, #nav_edu a, #nav_exp a, #nav_skil a {
+		
+		padding-top: 0.5em;
+	}
+
+	.nav_warp{
+		max-width: 90% !important;
+		padding: 0 !important;
+		margin: 0 auto !important;
+		text-align: center !important;
+	}
+	
+	.social_icon {
+   
+    margin-top: 1em;
+	margin-bottom:1em;
+    
+	}
+
+	.pro_icon{
+
+		
+	}
+
+	.menu{
+		display: none;
+	}
+	
+	p {
+    margin: 0 !important;
+}
+#pro_section {
+    max-width: 80%;
+}
+
+#pro_section h2 {
+    font-size: 3.3rem;
+   
+}
+
+.pro_pic {
+    width: 30%;
+    height: auto;
+}
+ #num_10{
+	width: 100%;  
+	margin-left: 0;
+	padding-left: 0;
+	/*text-align: center;  */                                        
+}
+
+.side_left {
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: -1em;
+	text-align: center !important;
+	width: 100% !important;
+}
+#pro_section .side_left h2 , #exp_section .side_left h2{
+	text-align: center;
+}
+.side_left p{
+	text-align: center !important;
+	font-size: 1.8rem;
+	/*padding-left: 13%;
+	padding-right: 10%;*/
+}
+#edu_section, #exp_section{
+	max-width: 100% !important;
+
+}
+
+#edu_section p, #exp_section p{
+
+	text-align: center;
+}
+
+#cap_icon{
+	width: 100% !important;
+	text-align: center;
+	clear: both;
+	/*text-align: center  !important;
+    margin-top: -0.5em  !important;*/
+}
+
+#edu_section .side_left {
+
+	width: 100% !important;
+}
+
+#edu_section .side_left h2{
+
+	text-align: center !important;
+}
+
+.degree_icon{
+	margin: -1em auto;
+}
+
+
+#skill{
+	
+	text-align: center;
+}
+
+#skill li h3{
+
+	font-size: 2.2rem;
+
+}
+#skill_section p{
+
+	text-align: center!important;
+}
+
+
+	footer p {
+    color: #fff;
+    text-align: center;
+    padding: 1em 0 1em 0;
+    font-size: 1.3rem;
+}
+footer a {
+    color: #17e7a4 !important;
+	font-size:1.3rem !important;
+}
+}
+
+
+@media screen and (max-width: 411px){
+
+#skill li h3{
+
+	font-size: 1.5rem !important;
+}
+
+
+#skill li{
+
+	height: 15px !important;
+	border-radius :8px;
+}
+
+.bar {
+    top: 40px;
+    height: 13px;
+   }
+.graphic-design{
+
+	top: 50px;
+	margin-left: 1px;
+}
+.html-css {
+    margin-top: 76px;
+    margin-left:1px  !important;
+}
+
+.wordpress {
+    margin-top: 206px;
+}
+
+	footer p {
+    
+    
+    font-size: 1rem;
+}
+footer a {
+    
+	font-size:1rem !important;
+}
+
+}
