@@ -1,98 +1,226 @@
 <!doctype html>
 <html>
-
 <head>
-    <link href='http://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
-    <meta charset="UTF-8">
-    <title>Untitled Document</title>
-    <link href="assets/scripts/styles.css" rel="stylesheet" type="text/css">
+<meta charset="UTF-8">
+<title>----* www. *----</title>
+<link rel="stylesheet" type="text/css" href="style.css"/>
 
-    <script src="assets/scripts/jquery-2.1.4.min.js"></script>
-    <script src="assets/scripts/change-content.js"></script>
- 					<!--	google font CDN-->
-	<link href="https://fonts.googleapis.com/css?family=Great+Vibes|Kaushan+Script|Lobster|Rubik" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
+<!--///////////////////// Google Font CDN Link ///////////////////////-->
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+
+<!-- ////////////////// Font Awesome CDN ////////////////////// -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
-<body>
 
-<div class="leftcontent" id="menu"><!--<img src="assets/images/apparent-logo.png" width="151" height="27" alt=""/>--><br/>
+<body onload="init()">
+	<div id="main" class="container-fluid">
 
-    <!-- LEFT NAV COLUMN STARTS HERE !-->
-    <!-- EDIT TEXT TO REFLECT JOB DETAILS !-->
-    <div class="h1" id="client-name">Portfolio</div>
-    <div class="sub" id="job-number">Ankan Ghosh</div>
-    <p id="job-description">Optional job description can be included using the paragraph style tag here.</p>
+		<!--################ nav section start #################-->
+		<nav>
+			<div class="nav_warp row center">
 
-    <div class="desktop-only">
-       
-        <h5>My Introduction</h5>
-        <ul id="html5-banner">
-            <li><a href="MY_portfillo/index.html" target="_blank" onclick="changeContent('MY_portfillo/index.html','html')">Ankan Ghosh</a></li>
-        </ul>
-        <h2>Web Page</h2>
-        <ul id="html5-banner">
-            <li><a href="#" onclick="changeContent('MYPage/Boostrap/bootstrap_01/index.html','html')">Responsive</a></li>
-            <li><a href="#" onclick="changeContent('MYPage/HTML_CSS/Demo_2015/index.html','html')">Non Responsive</a></li>
-        </ul>
-        <h2>HTML5 Banners</h2>
+				<div id="nav_pro" class="col-xl-3 col-md-3 col-lg-3 col-xs-3 col-3">
+					
+					<a href="#"><span class="pro_icon" id="pro"><i class="fas fa-user-tie"></i></span><br>
+					<span id="pro_menu" class="menu" >Profile</span></a>
+				</div>
+				<div id="nav_edu" class="col-xl-3 col-md-3 col-lg-3 col-xs-3 col-3">
+					<a href="#"><span class="pro_icon" id="edu_icon"><i class="fas fa-graduation-cap"></i></span><br>
+					<span id="edu_menu" class="menu">Education</span></a>
+					
+				</div>
 
-        <!-- EDIT LINKS USING THE FORMAT BELOW - IMAGES SHOULD USE 'img', SWF OR OTHER HTML PAGES SHOULD USE 'html'  !-->
-        <h5>Clicktag Banners</h5>
-        <ul id="html5-banner">
-            <li><a href="#" onclick="changeContent('Clicktags/AdWord/300x600_Adword/index.html','html')">Adword_300x600</a></li>
-             <!-- <li><a href="#" onclick="changeContent('Clicktags/AdWord/728x90_Adword/index.html','html')">Adword_728x90</a></li> -->
-             
-             <!--  <li><a href="#" onclick="changeContent('Clicktags/DCM/8768_BrandAwareness_Modernize_300x600/index.html','html')">DCM_300x600_01</a></li> -->
-            <li><a href="#" onclick="changeContent('Clicktags/DCM/300x250_DCM/index.html','html')">DCM_300x250</a></li>
-            <!-- <li><a href="#" onclick="changeContent('Clicktags/DCM/300x600_DCM/index.html','html')">DCM_300x600</a></li>
-            <li><a href="#" onclick="changeContent('Clicktags/DCM/728x90_DCM/index.html','html')">DCM_728x90</a></li>
-            <li><a href="#" onclick="changeContent('Clicktags/DCM/RAK arb general 728x90/index.html','html')">DCM_728x90_AR</a></li>
-            <li><a href="#" onclick="changeContent('Clicktags/DCM/URBAN_300x500/index.html','html')">DCM_300x500</a></li>
-             -->
-            
-            
-            
-            
-            <li><a href="#" onclick="changeContent('Clicktags/DCS/300x250_DCS/index.html','html')">DCS_300x250</a></li>
-            <!--  <li><a href="#" onclick="changeContent('Clicktags/DCS/MAZV1110-CX-8-970x250/index.html','html')">DCS_970x250</a></li> -->
-            <!--  <li><a href="#" onclick="changeContent('Clicktags/DCS/RACV0058-Prospecting-OMDP-728x90/index.html','html')">DCS_728x90</a></li> -->
-            
-            
-            
-            <li><a href="#" onclick="changeContent('Clicktags/Sizmic/300x600_Sizmic/index.html','html')">Sizmic</a></li>
-        </ul>
-        
-        <h5>Flash Banner</h5>
-        <ul id="html5-banner">
-            <li><a href="#" onclick="changeContent('Flash/Flash_Animate/300x250.html','html')">FlashBannner_01</a></li>
-             <li><a href="#" onclick="changeContent('Flash/AFS_300x250/index.html','html')">FlashBannner_02</a></li>
-              <li><a href="#" onclick="changeContent('Flash/HFS_Next_Gen_300x600/index.html','html')">FlashBannner_03</a></li>
-               <li><a href="#" onclick="changeContent('Flash/HFS18_300x600/index.html','html')">FlashBannner_04</a></li>
-                
-		</ul>
-        
-        <h5>EDM</h5>
-        <ul id="html5-banner">
-            <li><a href="#" onclick="changeContent('EDM/EDM_01/index.html','html')">EDM_1</a></li>
-            <li><a href="#" onclick="changeContent('EDM/EDM_02/index.html','html')">EDM_2</a></li>
-            <li><a href="#" onclick="changeContent('EDM/EDM_03/index.html','html')">EDM_3</a></li>
-            <li><a href="#" onclick="changeContent('EDM/EDM_04/index.html','html')">EDM_4</a></li>
-		</ul>
+				<div id="nav_exp" class="col-xl-3 col-md-3 col-lg-3 col-xs-3 col-3">
+					<a href="#"><span class="pro_icon" id="exp_icon"><i class="fab fa-black-tie"></i></span><br>
+					<span id="exp_menu" class="menu">Experience</span></a>
+					
+				</div>
 
-    	</div>
-
-    <div class="desktop-hide mobile-menu">
-    </div>
+				<div id="nav_skil" class="col-xl-3 col-md-3 col-lg-3 col-xs-3 col-3">
+					<a href="#"><span class="pro_icon" id="skil_icon"><i class="fas fa-plane-departure"></i></span><br>
+					<span id="skil_menu" class="menu" >Skills</span></a>
+					
+				</div>
+			</div>
+		</nav>
+					<!--################ section start #################-->
+		<section >
+			
+				<div id="pro_section" class="row">
+					<div class="row">
+						<div class="col-xl-12 col-md-12 col-lg-12 col-xs-12 col-12">
+						<img class="pro_pic" src="images/profile_img.png"/>
+						<h2>Ankan Ghosh</h2>
+						<p>
+							Born in Sahebganj (Jh) , living and working in Gurgaon (Haryana).<br>
+							Currently full-time Lead UI/UX Designer & Front-end Developer at <b>DigiLakshya Services Pvt. Ltd.</b>
+							I love building UI/UX design experiences that improve user's everyday life + I convert the design into responsive HTML5/CSS3 that I call PSD to HTML Development. I am always hungry for new challenges and innovations.<br><br>
+							Any spare time I have to work on side projects to further my skills so that I can apply these to real projects.
+						</p>
 
 
 
-</div>
-<div class="rightcontent" id="content">
-    <!-- RIGHT CONTENT COLUMN STARTS HERE !-->
-    <!-- DEFINE YOUR DEFAULT CONTENT HERE IF YOU WANT TO SEE SOMETHING ON FIRST LOAD !-->
 
-    <!-- <a href="MY_portfillo/index.html"></a> -->
-</div>
-<div id="include-config"></div>
+							<!-- Interactive developer with 2 years experience. Areas of expertise include creating digital banners using HTML, CSS and JS on different platform like FlashTalk, DCM, DCS, Adword and Sizmik .Have extencive work experience of Greenshock(Tweenlite).<br>
+						Having good knowledge of working with different animation software Adobe Animate(Flash), GWD, Edge and online platform Celtra. -->
+						</div>
+					</div>
+				<div class="row">
+					<div id="num_10" class="col-xl-6 col-md-6 col-lg-6 col-xs-6 col-6">10</div>
+					<div class="side_left col-xl-6 col-md-6 col-lg-6 col-xs-6 col-6"><h2>Months of experience in Web Design</h2>
+					<p>Areas of expertise include creating digital banners using HTML, CSS and JS on different platform like FlashTalk, DCM, DCS, Adword and Sizmik .Have extencive work experience of Greenshock(Tweenlite), EDM, etc.<br>
+					Having good knowledge of working with different animation software Adobe Animate(Flash), GWD, Edge and online platform Celtra.</p></div>
+					<div id="embd">&nbsp;&nbsp;&nbsp;&nbsp;</div>
+				</div>
+				<div class="row">
+					<a title="" class="btn  col-xl-2 col-md-2 col-lg-2 col-xs-2 col-2 col-xl-offset-10 col-md-offset-10 col-lg-offset-10 col-xs-offset-10" href="Resume\ankan_resume.doc"><i class="fa fa-download"></i>
+						<span class="tooltips_text">Download Resume</span>
+
+					</a>
+
+				</div>
+					<div class="social_icon row">
+						<a href="#" class=" mail_box col-xl-2 col-md-2 col-lg-2 col-xs-2 col-2 col-xl-offset-2 col-md-offset-2 col-lg-offset-2 col-xs-offset-2"><i class="fas fa-envelope  mail_box"></i>
+							<span class="tooltips_text">Gmail</span>
+						</a>
+						<a href="https://m.me/ankan0896" class="messenger_icon col-xl-2 col-md-2 col-lg-2 col-xs-2 col-2"><i class="fab fa-facebook-messenger messenger_icon "></i>
+						<span class="tooltips_text">Facebook</span>
+						</a>
+						<a href="https://instagram.com/download/?r=3109189643" class="instagram_icon col-xl-2 col-md-2 col-lg-2 col-xs-2 col-2"><i class="fab fa-instagram instagram_icon "></i>
+							<span class="tooltips_text">Instagram</span>
+
+						</a>
+						<a href="#" class="linkedin_icon col-xl-2 col-md-2 col-lg-2 col-xs-2 col-2"><i class="fab fa-linkedin-in linkedin_icon "></i>
+							<span class="tooltips_text">Linkedin</span>
+
+						</a>
+					</div>
+					
+				</div>
+				<!-- ************************ education section ******************-->
+
+			<div id="edu_section" >
+				<div class="row">
+					<P class="col-xl-12 col-md-12 col-lg-12 col-xs-12 col-12"></P>
+				</div>
+				<div class="degree">
+				<div class="row">
+
+				<div id="cap_icon" class=" col-xl-6 col-md-6 col-lg-6 col-xs-6 col-6"><i class="fas fa-graduation-cap degree_icon"></i></div>
+				<div class="side_left col-xl-6 col-md-6 col-lg-6 col-xs-6 col-6"><h2>2013-2016</h2>
+				<p>B.com Account Honors</p></div></div>
+					
+				</div><div id="embd">&nbsp;&nbsp;&nbsp;&nbsp;</div>
+
+				<div class="degree">
+				<div class="row">
+
+				<div id="cap_icon" class=" col-xl-6 col-md-6 col-lg-6 col-xs-6 col-6"><i class="fas fa-graduation-cap degree_icon"></i></div>
+				<div class="side_left col-xl-6 col-md-6 col-lg-6 col-xs-6 col-6"><h2>2011-2013</h2>
+				<p>Intermidate of Science</p></div>
+					
+				</div></div>
+
+
+
+				<div id="embd">&nbsp;&nbsp;&nbsp;&nbsp;</div>
+
+				<div class="degree">
+				<div class="row">
+
+				<div id="cap_icon" class=" col-xl-6 col-md-6 col-lg-6 col-xs-6 col-6" ><i class="fas fa-graduation-cap degree_icon"></i></div>
+				<div class="side_left col-xl-6 col-md-6 col-lg-6 col-xs-6 col-6"><h2>2010-2011</h2>
+				<p>Matric</p></div></div>
+					
+				</div><div id="embd">&nbsp;&nbsp;&nbsp;&nbsp;</div>
+				
+			</div>
+
+			<!--***************** exprince_section ******************-->
+			<div id="exp_section">
+				<div class="row">
+					<P class="col-xl-12 col-md-12 col-lg-12 col-xs-12 col-12"> I am privileged to say that I have had some great working experience.</P>
+				</div>
+				<div class="degree">
+					<div class="row">
+
+						<div id="cap_icon" class="col-xl-6 col-md-6 col-lg-6 col-xs-6 col-6"><i class="fab fa-black-tie degree_icon"></i></div>
+						<div class="side_left col-xl-6 col-md-6 col-lg-6 col-xs-6 col-6"><h2>November 2017 - Present</h2>
+					<p> <b>DigiLakshya Services Pvt. Ltd.</b><br><br>
+					Associate Interactive Devloper L1. </p></div>
+					
+				</div></div>
+
+				<div class="embd">&nbsp;&nbsp;&nbsp;&nbsp;</div>
+
+				<div class="degree">
+					<div class="row">
+
+				<div id="cap_icon" class="col-xl-6 col-md-6 col-lg-6 col-xs-6 col-6"><i class="fab fa-black-tie degree_icon"></i></div>
+				<div class="side_left col-xl-6 col-md-6 col-lg-6 col-xs-6 col-6"><h2> August 2016 - October 2017 </h2>
+				<p>Vodafone India<br><br>
+				Marketing Supervisor </p></div>
+					
+				</div>
+			</div>
+				<div id="embd">&nbsp;&nbsp;&nbsp;&nbsp;</div>
+
+				<div class="degree">
+					<div class="row">
+
+				<div id="cap_icon" class="col-xl-6 col-md-6 col-lg-6 col-xs-6 col-6"><i class="fab fa-black-tie degree_icon"></i></div>
+				<div class="side_left col-xl-6 col-md-6 col-lg-6 col-xs-6 col-6"><h2>April 2016 - August 2016</h2>
+				<p>Harilal & Sons Pvt. Ltd.<br><br>Sales Supervisor</p></div>
+					
+				</div>
+			</div>
+
+				<div class="embd">&nbsp;&nbsp;&nbsp;&nbsp;</div>
+				
+			</div>
+			<!--####################### skill_section ###################-->
+	
+ 				<div id="skill_section">
+ 					<div class="row">
+						<P class="col-xl-12 col-md-12 col-lg-12 col-xs-12 col-12">User Interface, User Experience Design, UI/UX, Website Design, Interaction Design, Art Director, Graphic Design, Art Direction, PSD to HTML, HTML5, CSS, Google web designer, HTML5 Animation, HTML5 Animated Banners, HTML, Logo Design, Branding, Commercials, Creative Concept & Strategy, Guidelines, Icon Design, Photography, Print, Storytelling, Video, Editing.</P></div>
+						<div class="degree">
+							<div class="row">
+				<ul id="skill" class="col-xl-12 col-md-12 col-lg-12 col-xs-12 col-12 center">
+					<li><span class="bar graphic-design"></span><h3>Graphic Design&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3></li>
+					<li><span class="bar html-css"></span><h3>Html5 // Css3</h3></li>
+					<li><span class="bar jquery"></span><h3> Celtra // EDM </h3></li>
+					<li><span class="bar wordpress"></span><h3>Boostrap // JavaScript</h3></li>
+
+
+				</ul>
+				</div>
+			</div>
+				<div class="embd">&nbsp;&nbsp;&nbsp;&nbsp;</div>
+
+				
+			</div>
+		 			
+		 	
+
+		</section>
+
+		<footer >
+			<div class="row">
+			<p class="col-xl-12 col-md-12 col-lg-12 col-xs-12 col-12 center">© 2018 All Rights Reserved. <a href="#">Ankan</a> | UI/UX Designer & Front-end Developer | Gurgaon | Personal Portfolio.</p>
+		</div>
+		</footer>
+
+
+	</div>
+	<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
