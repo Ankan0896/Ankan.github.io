@@ -188,7 +188,88 @@ section{
 
     }
 
+   .btn .tooltips_text{
+    visibility: hidden;
+    width: auto;
+    font-size: 0.5em;
+    background-color: rgba(23,231,166,0.85);
+    color:  #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 5px;
+
+    top: 6px;
+    left: -80%;
+    opacity: 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+
+   transition: opacity 1.5s;
+  
+}
+
+.mail_box .tooltips_text,.messenger_icon .tooltips_text,.instagram_icon .tooltips_text,.linkedin_icon .tooltips_text {
+    visibility: hidden;
+    width: 100px;
+    font-size: 0.8em;
+    background-color: rgba(23,231,166,0.85);
+    color:  #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 2px 3px;
+
+    top: -40px;
+    left: 15%;
+    opacity: 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+
+   transition: top 0.3s;
+  
+}
+
+.mail_box .tooltips_text::after,.messenger_icon .tooltips_text::after,.instagram_icon .tooltips_text::after,.linkedin_icon .tooltips_text::after {
+    content: " ";
+    position: absolute;
+    top: 100%; /* At the bottom of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgba(23,231,166,0.85) transparent transparent transparent; 
+}
+
+
+.mail_box:hover .tooltips_text,.messenger_icon:hover .tooltips_text,.instagram_icon:hover .tooltips_text,.linkedin_icon:hover .tooltips_text {
+    visibility: visible;
+    opacity: 1;
+    top:-30px;
    
+
+}
+
+.btn .tooltips_text::after {
+     content: " ";
+    position: absolute;
+    top: 50%;
+    left: 100%; /* To the right of the tooltip */
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent rgba(23,231,166,0.85);
+}
+
+
+.btn:hover .tooltips_text {
+    visibility: visible;
+    opacity: 1;
+    left: -60%;
+
+}
 
 #pro_section{
 	max-width: 70%;
